@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Calculator
+{
+  public static void main( String[] args)
+{
+  double num1;
+  double num2; 
+  double ans;
+  char operator;
+  Scanner reader= new Scanner(System.in);
+  System.out.println("Enter the two numbers :");
+  num1=reader.nextDouble();
+  num1=reader.nextDouble();
+  System.out.println("Enter the  operator (+,*,-,/):");
+  operator= reader.next().Char(O);
+ switch(operator){
+case '+': ans=num1 + num2;
+break;
+case '-': ans=num1 - num2;
+break;
+case '/': ans=num1 / num2;
+break;
+case '*': ans=num1 * num2;
+break;
+default:System.out.printf("Error! Enter the correct operator");
+return;
+}
+System.out.print("the result is as follow:");
+System.out.printf( num1+" " + operator + " " +  num2 + " " + ans);
+}
+}
